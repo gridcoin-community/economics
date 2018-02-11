@@ -2,7 +2,8 @@ source("./lib.R")
 
 coinSupply <- 400000000
 RRfrac <- seq(from=0.65,to=0.85,by=0.05)
-inflationRate <- 30000*365/(coinSupply*RRfrac)
+RRmintDaily <- 28000
+inflationRate <- RRmintDaily*365/(coinSupply*RRfrac)
 
 years <- 50
 
